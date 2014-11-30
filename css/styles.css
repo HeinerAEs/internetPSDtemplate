@@ -9,6 +9,7 @@
   box-sizing: border-box;
 }
 a {
+  color: #000;
   text-decoration: none;
 }
 h1,
@@ -108,7 +109,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 figure {
-  margin: 1em 40px;
+  margin: 0 auto;
 }
 hr {
   -moz-box-sizing: content-box;
@@ -256,7 +257,8 @@ p {
 .icon-github:before {
   content: "\e606";
 }
-.btn {
+.btn,
+.list {
   border: none;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -268,7 +270,8 @@ p {
   text-transform: uppercase;
   width: 100px;
 }
-.btn-active {
+.btn-active,
+.list-active {
   color: #fff !important;
   background: -webkit-linear-gradient(top, #f72c32, #f95155) !important;
   background: -moz-linear-gradient(top, #f72c32, #f95155) !important;
@@ -276,7 +279,8 @@ p {
   background: -ms-linear-gradient(top, #f72c32, #f95155) !important;
   background: linear-gradient(to bottom, #f72c32, #f95155) !important;
 }
-.btn-blue {
+.btn-blue,
+.list-blue {
   background: #027fff;
   background: -webkit-linear-gradient(top, #027fff, #4fa7ff);
   background: -moz-linear-gradient(top, #027fff, #4fa7ff);
@@ -284,7 +288,8 @@ p {
   background: -ms-linear-gradient(top, #027fff, #4fa7ff);
   background: linear-gradient(to bottom, #027fff, #4fa7ff);
 }
-.btn-blue:hover {
+.btn-blue:hover,
+.list-blue:hover {
   background: #4fa7ff;
   background: -webkit-linear-gradient(top, #4fa7ff, #027fff);
   background: -moz-linear-gradient(top, #4fa7ff, #027fff);
@@ -292,12 +297,14 @@ p {
   background: -ms-linear-gradient(top, #4fa7ff, #027fff);
   background: linear-gradient(to bottom, #4fa7ff, #027fff);
 }
-.btn-icon {
+.btn-icon,
+.list-icon {
   margin-left: -2.7em;
   text-align: center;
   width: 40px;
 }
-.btn-light {
+.btn-light,
+.list-light {
   color: #000;
   background: #e9e9e9;
   background: -webkit-linear-gradient(top, #e9e9e9, #f0f0f0);
@@ -306,7 +313,8 @@ p {
   background: -ms-linear-gradient(top, #e9e9e9, #f0f0f0);
   background: linear-gradient(to bottom, #e9e9e9, #f0f0f0);
 }
-.btn-light:hover {
+.btn-light:hover,
+.list-light:hover {
   background: #d3d3d3;
   background: -webkit-linear-gradient(top, #d3d3d3, #e6e6e6);
   background: -moz-linear-gradient(top, #d3d3d3, #e6e6e6);
@@ -314,7 +322,8 @@ p {
   background: -ms-linear-gradient(top, #d3d3d3, #e6e6e6);
   background: linear-gradient(to bottom, #d3d3d3, #e6e6e6);
 }
-.btn-orange {
+.btn-orange,
+.list-orange {
   background: #fc7903;
   background: -webkit-linear-gradient(top, #fc7903, #fd9639);
   background: -moz-linear-gradient(top, #fc7903, #fd9639);
@@ -322,7 +331,8 @@ p {
   background: -ms-linear-gradient(top, #fc7903, #fd9639);
   background: linear-gradient(to bottom, #fc7903, #fd9639);
 }
-.btn-orange:hover {
+.btn-orange:hover,
+.list-orange:hover {
   background: #fd9639;
   background: -webkit-linear-gradient(top, #fd9639, #fc7903);
   background: -moz-linear-gradient(top, #fd9639, #fc7903);
@@ -330,7 +340,8 @@ p {
   background: -ms-linear-gradient(top, #fd9639, #fc7903);
   background: linear-gradient(to bottom, #fd9639, #fc7903);
 }
-.btn-red {
+.btn-red,
+.list-red {
   background: #f72c32;
   background: -webkit-linear-gradient(top, #f72c32, #f95155);
   background: -moz-linear-gradient(top, #f72c32, #f95155);
@@ -338,7 +349,8 @@ p {
   background: -ms-linear-gradient(top, #f72c32, #f95155);
   background: linear-gradient(to bottom, #f72c32, #f95155);
 }
-.btn-red:hover {
+.btn-red:hover,
+.list-red:hover {
   background: #f95155;
   background: -webkit-linear-gradient(top, #f95155, #f72c32);
   background: -moz-linear-gradient(top, #f95155, #f72c32);
@@ -354,16 +366,11 @@ p {
   margin: 0 auto;
 }
 .col-6 {
-  width: 100%/2;
+  display: inline-block;
+  width: 49.5%;
 }
 .col-12 {
   width: 100%;
-}
-.inline {
-  display: inline-block;
-}
-.left {
-  text-align: left;
 }
 .Header {
   background: #ff9a07;
@@ -491,9 +498,36 @@ p {
   top: 90%;
   text-transform: lowercase;
 }
-.right {
-  text-align: right;
+.inline {
+  display: inline-block;
 }
+.left {
+  text-align: left;
+}
+.list {
+  border: 1px solid #e6e6e6;
+  text-align: left;
+  width: 80%;
+}
+.list-light {
+  color: #000;
+  background: #fff;
+  background: -webkit-linear-gradient(top, #fff, #f2f2f2);
+  background: -moz-linear-gradient(top, #fff, #f2f2f2);
+  background: -o-linear-gradient(top, #fff, #f2f2f2);
+  background: -ms-linear-gradient(top, #fff, #f2f2f2);
+  background: linear-gradient(to bottom, #fff, #f2f2f2);
+}
+.list-light:hover {
+  border: 1px solid #e6e6e6;
+  background: #f2f2f2;
+  background: -webkit-linear-gradient(top, #f2f2f2, #fff);
+  background: -moz-linear-gradient(top, #f2f2f2, #fff);
+  background: -o-linear-gradient(top, #f2f2f2, #fff);
+  background: -ms-linear-gradient(top, #f2f2f2, #fff);
+  background: linear-gradient(to bottom, #f2f2f2, #fff);
+}
+.Services,
 .Work {
   display: -webkit-box;
   display: -moz-box;
@@ -503,8 +537,101 @@ p {
   display: flex;
   margin: 0 auto;
   position: relative;
-  top: -8em;
   width: 80vw;
+}
+.Services {
+  top: -5em;
+}
+.Services-aside {
+  width: 30%;
+}
+.Services-article {
+  width: 69%;
+}
+.Services-item {
+  list-style: none;
+  margin: 0 0 0.1em 0;
+}
+.Services-link {
+  color: #222;
+  display: block;
+}
+.Services-link:before {
+  color: #222;
+  content: "\e604";
+  font-size: 1.5em;
+}
+.Services-list {
+  padding: 0;
+}
+.title {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.title-1x {
+  font-size: 0.5em;
+  font-weight: 500;
+}
+.title-1x span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-2x {
+  font-size: 1em;
+  font-weight: 500;
+}
+.title-2x span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-3x {
+  font-size: 2em;
+  font-weight: 500;
+}
+.title-3x span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-4x {
+  font-size: 3em;
+  font-weight: 500;
+}
+.title-4x span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-5x {
+  font-size: 4em;
+  font-weight: 500;
+}
+.title-5x span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-6x {
+  font-size: 5em;
+  margin: 0;
+  padding: 0 0.3em;
+}
+.title-6x span {
+  display: block;
+  font-weight: 700;
+  font-size: 0.2em;
+}
+.text-right {
+  text-align: right;
+}
+.u-uppercase {
+  text-transform: uppercase;
+}
+.Work {
+  top: -8em;
 }
 .Work p {
   color: #b0b0b0;
@@ -529,64 +656,4 @@ p {
 .Work-itemImage {
   min-height: 164px;
   width: 170px;
-}
-.title {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.title-x1 {
-  font-size: 0.5em;
-  font-weight: 500;
-}
-.title-x1 span {
-  color: #a7a7a7;
-  display: block;
-  font-size: 0.8em;
-}
-.title-x2 {
-  font-size: 1em;
-  font-weight: 500;
-}
-.title-x2 span {
-  color: #a7a7a7;
-  display: block;
-  font-size: 0.8em;
-}
-.title-x3 {
-  font-size: 2em;
-  font-weight: 500;
-}
-.title-x3 span {
-  color: #a7a7a7;
-  display: block;
-  font-size: 0.8em;
-}
-.title-x4 {
-  font-size: 3em;
-  font-weight: 500;
-}
-.title-x4 span {
-  color: #a7a7a7;
-  display: block;
-  font-size: 0.8em;
-}
-.title-x5 {
-  font-size: 4em;
-  font-weight: 500;
-}
-.title-x5 span {
-  color: #a7a7a7;
-  display: block;
-  font-size: 0.8em;
-}
-.title-x6 {
-  font-size: 5em;
-  margin: 0;
-  padding: 0 0.3em;
-}
-.title-x6 span {
-  display: block;
-  font-weight: 700;
-  font-size: 0.2em;
 }

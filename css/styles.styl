@@ -6,6 +6,7 @@
 @import "font.styl" 
 
 .btn
+.list
 	border none
 	border-radius 5px
 	box-shadow 0px 0px 2px rgba(255, 255, 255, 0.5)
@@ -53,13 +54,10 @@
 .center
 	margin 0 auto
 .col-6
-	width width / 2
+	display inline-block
+	width (width / 2) - 0.5%
 .col-12
 	width width
-.inline
-	display inline-block
-.left
-	text-align left
 	
 .Header
 	background #ff9a07
@@ -159,15 +157,103 @@
 		text-transform lowercase
 
 
-.right
-	text-align right
+.inline
+	display inline-block
+.left
+	text-align left
+.list
+	border 1px solid #E6E6E6
+	text-align left
+	width 80%
+	&-light
+		color #000
+		background #FFFFFF
+		background linear-gradient(to bottom, #FFFFFF, #F2F2F2)
+		&:hover
+			border 1px solid #E6E6E6
+			background #F2F2F2
+			background linear-gradient(to bottom, #F2F2F2, #FFFFFF)
 	
+
+.Services
 .Work
 	display flex
 	margin 0 auto
 	position relative
-	top -8em
 	width 80vw
+.Services
+	top -5em
+	&-aside
+		width 30%
+	&-article
+		width 69%
+	&-item
+		list-style none
+		margin 0 0 0.1em 0
+	&-link
+		color: #222
+		display block
+	&-link:before
+		color: #222
+		content "\e604"
+		font-size 1.5em
+	&-list
+		padding 0
+
+.title	
+	display block
+	margin 0
+	padding 0
+	&-1x
+		font-size 0.5em
+		font-weight 500
+		span
+			color #A7A7A7
+			display block
+			font-size 0.8em
+	&-2x
+		font-size 1em
+		font-weight 500
+		span
+			color #A7A7A7
+			display block
+			font-size 0.8em
+	&-3x
+		font-size 2em
+		font-weight 500
+		span
+			color #A7A7A7
+			display block
+			font-size 0.8em
+	&-4x
+		font-size 3em
+		font-weight 500
+		span
+			color #A7A7A7
+			display block
+			font-size 0.8em
+	&-5x
+		font-size 4em
+		font-weight 500
+		span
+			color #A7A7A7
+			display block
+			font-size 0.8em
+	&-6x
+		font-size 5em
+		margin 0
+		padding 0 0.3em
+		span
+			display block
+			font-weight 700
+			font-size 0.2em
+.text-right
+	text-align right
+.u-uppercase
+	text-transform uppercase
+
+.Work
+	top -8em
 	p
 		color #B0B0B0
 		font-family sans-serif
@@ -186,51 +272,3 @@
 	&-itemImage
 		min-height 164px
 		width 170px
-		
-.title	
-	display block
-	margin 0
-	padding 0
-	&-x1
-		font-size 0.5em
-		font-weight 500
-		span
-			color #A7A7A7
-			display block
-			font-size 0.8em
-	&-x2
-		font-size 1em
-		font-weight 500
-		span
-			color #A7A7A7
-			display block
-			font-size 0.8em
-	&-x3
-		font-size 2em
-		font-weight 500
-		span
-			color #A7A7A7
-			display block
-			font-size 0.8em
-	&-x4
-		font-size 3em
-		font-weight 500
-		span
-			color #A7A7A7
-			display block
-			font-size 0.8em
-	&-x5
-		font-size 4em
-		font-weight 500
-		span
-			color #A7A7A7
-			display block
-			font-size 0.8em
-	&-x6
-		font-size 5em
-		margin 0
-		padding 0 0.3em
-		span
-			display block
-			font-weight 700
-			font-size 0.2em
