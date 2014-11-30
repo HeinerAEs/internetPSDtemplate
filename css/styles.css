@@ -8,6 +8,18 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -16,6 +28,7 @@ html {
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
+  font-weight: 500;
   margin: 0;
 }
 article,
@@ -279,9 +292,27 @@ p {
   background: -ms-linear-gradient(top, #4fa7ff, #027fff);
   background: linear-gradient(to bottom, #4fa7ff, #027fff);
 }
-.btn-form {
-  margin-left: -2.3em;
-  width: 33px;
+.btn-icon {
+  margin-left: -2.7em;
+  text-align: center;
+  width: 40px;
+}
+.btn-light {
+  color: #000;
+  background: #e9e9e9;
+  background: -webkit-linear-gradient(top, #e9e9e9, #f0f0f0);
+  background: -moz-linear-gradient(top, #e9e9e9, #f0f0f0);
+  background: -o-linear-gradient(top, #e9e9e9, #f0f0f0);
+  background: -ms-linear-gradient(top, #e9e9e9, #f0f0f0);
+  background: linear-gradient(to bottom, #e9e9e9, #f0f0f0);
+}
+.btn-light:hover {
+  background: #d3d3d3;
+  background: -webkit-linear-gradient(top, #d3d3d3, #e6e6e6);
+  background: -moz-linear-gradient(top, #d3d3d3, #e6e6e6);
+  background: -o-linear-gradient(top, #d3d3d3, #e6e6e6);
+  background: -ms-linear-gradient(top, #d3d3d3, #e6e6e6);
+  background: linear-gradient(to bottom, #d3d3d3, #e6e6e6);
 }
 .btn-orange {
   background: #fc7903;
@@ -317,7 +348,10 @@ p {
 }
 .block {
   clear: both;
-display-block
+  display: block;
+}
+.center {
+  margin: 0 auto;
 }
 .col-6 {
   width: 100%/2;
@@ -460,8 +494,99 @@ display-block
 .right {
   text-align: right;
 }
-.title-lg-x6 {
+.Work {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  top: -8em;
+  width: 80vw;
+}
+.Work p {
+  color: #b0b0b0;
+  font-family: sans-serif;
+  text-align: center;
+}
+.Work-item {
+  margin-right: 1.2em;
+}
+.Work-item:last-child {
+  margin-right: 0;
+}
+.Work-itemFigure {
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  min-height: 290px;
+  padding: 1em;
+  text-align: center;
+}
+.Work-itemImage {
+  min-height: 164px;
+  width: 170px;
+}
+.title {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.title-x1 {
+  font-size: 0.5em;
+  font-weight: 500;
+}
+.title-x1 span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-x2 {
+  font-size: 1em;
+  font-weight: 500;
+}
+.title-x2 span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-x3 {
+  font-size: 2em;
+  font-weight: 500;
+}
+.title-x3 span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-x4 {
+  font-size: 3em;
+  font-weight: 500;
+}
+.title-x4 span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-x5 {
+  font-size: 4em;
+  font-weight: 500;
+}
+.title-x5 span {
+  color: #a7a7a7;
+  display: block;
+  font-size: 0.8em;
+}
+.title-x6 {
   font-size: 5em;
   margin: 0;
   padding: 0 0.3em;
+}
+.title-x6 span {
+  display: block;
+  font-weight: 700;
+  font-size: 0.2em;
 }
