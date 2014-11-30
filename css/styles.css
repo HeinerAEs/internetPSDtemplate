@@ -1,1 +1,322 @@
-@import "normalize.min.css";
+@import url("http://fonts.googleapis.com/css?family=Oswald");
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px rgba(255,255,255,0.5);
+  box-shadow: 0px 0px 2px rgba(255,255,255,0.5);
+  color: #fff;
+  padding: 0.5em 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+}
+.btn-blue {
+  background: #027fff;
+  background: -webkit-linear-gradient(top, #027fff, #4fa7ff);
+  background: -moz-linear-gradient(top, #027fff, #4fa7ff);
+  background: -o-linear-gradient(top, #027fff, #4fa7ff);
+  background: -ms-linear-gradient(top, #027fff, #4fa7ff);
+  background: linear-gradient(to bottom, #027fff, #4fa7ff);
+}
+.btn-blue:hover {
+  background: #4fa7ff;
+  background: -webkit-linear-gradient(top, #4fa7ff, #027fff);
+  background: -moz-linear-gradient(top, #4fa7ff, #027fff);
+  background: -o-linear-gradient(top, #4fa7ff, #027fff);
+  background: -ms-linear-gradient(top, #4fa7ff, #027fff);
+  background: linear-gradient(to bottom, #4fa7ff, #027fff);
+}
+.btn-form {
+  margin-left: -2.3em;
+  width: 33px;
+}
+.btn-orange {
+  background: #fc7903;
+  background: -webkit-linear-gradient(top, #fc7903, #fd9639);
+  background: -moz-linear-gradient(top, #fc7903, #fd9639);
+  background: -o-linear-gradient(top, #fc7903, #fd9639);
+  background: -ms-linear-gradient(top, #fc7903, #fd9639);
+  background: linear-gradient(to bottom, #fc7903, #fd9639);
+}
+.btn-orange:hover {
+  background: #fd9639;
+  background: -webkit-linear-gradient(top, #fd9639, #fc7903);
+  background: -moz-linear-gradient(top, #fd9639, #fc7903);
+  background: -o-linear-gradient(top, #fd9639, #fc7903);
+  background: -ms-linear-gradient(top, #fd9639, #fc7903);
+  background: linear-gradient(to bottom, #fd9639, #fc7903);
+}
+.btn-red {
+  background: #f72c32;
+  background: -webkit-linear-gradient(top, #f72c32, #f95155);
+  background: -moz-linear-gradient(top, #f72c32, #f95155);
+  background: -o-linear-gradient(top, #f72c32, #f95155);
+  background: -ms-linear-gradient(top, #f72c32, #f95155);
+  background: linear-gradient(to bottom, #f72c32, #f95155);
+}
+.btn-red:hover {
+  background: #f95155;
+  background: -webkit-linear-gradient(top, #f95155, #f72c32);
+  background: -moz-linear-gradient(top, #f95155, #f72c32);
+  background: -o-linear-gradient(top, #f95155, #f72c32);
+  background: -ms-linear-gradient(top, #f95155, #f72c32);
+  background: linear-gradient(to bottom, #f95155, #f72c32);
+}
+.block {
+  clear: both;
+display-block
+}
+.col-6 {
+  width: 100%/2;
+}
+.col-12 {
+  width: 100%;
+}
+.inline {
+  display: inline-block;
+}
+.Header {
+  background: #ff9a07;
+  background: -webkit-linear-gradient(top, #df8600 0%, #fce22e 100%);
+  background: -moz-linear-gradient(top, #df8600 0%, #fce22e 100%);
+  background: -o-linear-gradient(top, #df8600 0%, #fce22e 100%);
+  background: -ms-linear-gradient(top, #df8600 0%, #fce22e 100%);
+  background: linear-gradient(to bottom, #df8600 0%, #fce22e 100%);
+  height: 90vh;
+  padding: 1em;
+}
+.Header-top {
+  min-height: 3.5em;
+  margin: 0 auto;
+  position: relative;
+  width: 80vw;
+}
+.Header-topButton,
+.Header-topSearch,
+.Header-topFollow {
+  overflow: hidden;
+  position: absolute;
+}
+.Header-topButton {
+  left: 0;
+}
+.Header-topSearch {
+  right: 0;
+}
+.Header-topSearchForm .inputText {
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0.55em 0.7em;
+  width: 300px;
+}
+.Header-topFollow {
+  color: #fff;
+  font-size: 1.5em;
+  right: 1%;
+  top: 90%;
+  text-transform: lowercase;
+}
+.right {
+  text-align: right;
+}
