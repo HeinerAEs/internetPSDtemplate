@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald");
+@import url("http://fonts.googleapis.com/css?family=Calligraffitti");
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 *,
 *:after,
@@ -14,7 +15,7 @@ html {
 }
 body {
   font-family: 'Oswald', sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   margin: 0;
 }
 article,
@@ -210,6 +211,14 @@ p {
   text-transform: uppercase;
   width: 100px;
 }
+.btn-active {
+  color: #fff !important;
+  background: -webkit-linear-gradient(top, #f72c32, #f95155) !important;
+  background: -moz-linear-gradient(top, #f72c32, #f95155) !important;
+  background: -o-linear-gradient(top, #f72c32, #f95155) !important;
+  background: -ms-linear-gradient(top, #f72c32, #f95155) !important;
+  background: linear-gradient(to bottom, #f72c32, #f95155) !important;
+}
 .btn-blue {
   background: #027fff;
   background: -webkit-linear-gradient(top, #027fff, #4fa7ff);
@@ -275,6 +284,9 @@ display-block
 .inline {
   display: inline-block;
 }
+.left {
+  text-align: left;
+}
 .Header {
   background: #ff9a07;
   background: -webkit-linear-gradient(top, #df8600 0%, #fce22e 100%);
@@ -285,11 +297,68 @@ display-block
   height: 90vh;
   padding: 1em;
 }
+.Header-bottom,
 .Header-top {
   min-height: 3.5em;
   margin: 0 auto;
   position: relative;
   width: 80vw;
+}
+.Header-bottom {
+  margin-top: 2em;
+}
+.Header-bottomBrand {
+  color: #fff;
+  display: inline-block;
+  width: 30%;
+}
+.Header-bottomBrand h2 {
+  font-family: 'Calligraffitti', cursive;
+  position: relative;
+}
+.Header-bottomBrand h2 span {
+  color: #222;
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  font-size: 1rem;
+  left: 10%;
+  position: absolute;
+  top: 70%;
+}
+.Header-bottomMenu {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: 25%;
+  width: 68%;
+}
+.Header-bottomMenuItem {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+}
+.Header-bottomMenuLink {
+  background: -webkit-linear-gradient(top, rgba(223,134,0,0.5) 0%, rgba(252,230,0,0.5) 100%);
+  background: -moz-linear-gradient(top, rgba(223,134,0,0.5) 0%, rgba(252,230,0,0.5) 100%);
+  background: -o-linear-gradient(top, rgba(223,134,0,0.5) 0%, rgba(252,230,0,0.5) 100%);
+  background: -ms-linear-gradient(top, rgba(223,134,0,0.5) 0%, rgba(252,230,0,0.5) 100%);
+  background: linear-gradient(to bottom, rgba(223,134,0,0.5) 0%, rgba(252,230,0,0.5) 100%);
+  color: #222;
+  display: block;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+.Header-bottomMenuLink:hover {
+  background: -webkit-linear-gradient(top, #f72c32, #f95155);
+  background: -moz-linear-gradient(top, #f72c32, #f95155);
+  background: -o-linear-gradient(top, #f72c32, #f95155);
+  background: -ms-linear-gradient(top, #f72c32, #f95155);
+  background: linear-gradient(to bottom, #f72c32, #f95155);
+  color: #fff;
+}
+.Header-bottomMenuList {
+  margin: 0;
 }
 .Header-topButton,
 .Header-topSearch,
@@ -319,4 +388,9 @@ display-block
 }
 .right {
   text-align: right;
+}
+.title-lg-x6 {
+  font-size: 5em;
+  margin: 0;
+  padding: 0 0.3em;
 }
