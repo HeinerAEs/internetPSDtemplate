@@ -47,11 +47,82 @@
 		&:hover
 			background #F95155
 			background linear-gradient(to bottom, #F95155, #F72C32)
+
+.Footer
+.Services
+.Work
+	display flex
+	margin 0 auto
+	position relative
+	width 80vw
+.Footer
+	align-items stretch
+	background #0C0B09
+	color #FFF
+	display flex
+	flex-wrap wrap
+	font-weight 100
+	justify-content center
+	padding 1em
+	width 100%
+	&-bottom
+		display flex
+		flex-wrap wrap
+		font-size 0.8em
+		justify-content space-between
+		position relative
+		width 80vw
+	&-bottomList
+		margin 0 auto
+	&-bottomItem
+		display inline-block
+		list-style none
+		padding 0
+		a
+			color #FFF
+			display block
+			border-radius 50%
+			font-size 1.5em
+			padding 0.3em 0.4em
+		
+	&-item
+		border-right 1px solid #1B1B1B
+		font-weight 500
+		margin-left 2em
+		width 18%
+		p
+			color #b0b0b0
+			font-size 0.8em
+			list-style none
+			padding-top 1em
+			position relative
+			margin 0
+			span
+				position absolute
+				right 30%
+		&:nth-child(4)
+			border none
+	&-list
+		padding 0
+		color #FFF
+	&-listItems
+		color #6B6B6B
+		font-size 0.8em
+		list-style none
+		padding-bottom 1em
+		margin 0
+		&:before
+			content "» "
+	&-listLink
+		color #868686
+		&:hover
+			color #ADADAD
+	
 	
 .Header
 	background #ff9a07
 	background linear-gradient(to bottom, #DF8600 0%, #FCE22E 100%)
-	height 90vh
+	height 95vh
 	padding 1em
 	&-bottom
 	&-slide
@@ -63,6 +134,7 @@
 		
 	&-bottom
 		margin-top 2em
+		overflow hidden
 	&-bottomBrand
 		color #FFF
 		display inline-block
@@ -110,7 +182,7 @@
 		padding 0.5em
 		width 80%
 	&-slideTitle
-		font-size 2.6rem
+		font-size 2.4rem
 		font-weight 300
 		text-transform uppercase
 	&-slideChange
@@ -133,6 +205,7 @@
 	&-topSearch
 		right 0
 	&-topSearchForm
+		text-align right
 		.inputText
 			border none
 			border-radius 5px
@@ -145,13 +218,6 @@
 		top 90%
 		text-transform lowercase
 	
-
-.Services
-.Work
-	display flex
-	margin 0 auto
-	position relative
-	width 80vw
 .Services
 	top -5em
 	&-aside
@@ -182,13 +248,13 @@
 		width 39%
 
 .Work
-	top -8em
+	top -7em
 	p
 		color #B0B0B0
 		font-family sans-serif
 		text-align center
 	&-item
-		margin-right 1.2em
+		margin-right 1.5em
 		&:last-child
 			margin-right 0
 	&-itemFigure
@@ -199,8 +265,8 @@
 		padding 1em
 		text-align center
 	&-itemImage
-		min-height 164px
-		width 170px
+		min-height: 121px;
+		width: 130px;
 		
 
 /*Utilities*/
@@ -213,15 +279,15 @@
 	margin 0 auto
 .col-6
 	display inline-block
-	width (width / 2) - 0.5%
+	width (width-content / 2) - 0.5%
 .col-12
-	width width
+	width width-content
 .fill
 	width 99%
 .inline
 	display inline-block
 .left
-	text-align left
+	float left
 .list
 	border 1px solid #E6E6E6
 	text-align left
@@ -234,8 +300,8 @@
 			border 1px solid #E6E6E6
 			background #F2F2F2
 			background linear-gradient(to bottom, #F2F2F2, #FFFFFF)
-.center
-	margin 0 auto
+.right
+	float right
 .title	
 	display block
 	margin 0
