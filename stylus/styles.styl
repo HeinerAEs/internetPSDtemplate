@@ -1,5 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Oswald")
-@import url("http://fonts.googleapis.com/css?family=Calligraffitti")
+@import url("http://fonts.googleapis.com/css?family=Oswald|Calligraffitti|Roboto:300");
 
 @import "nib"
 @import "normalize.styl"
@@ -16,8 +15,12 @@
 	text-transform uppercase
 	width 100px
 	&-active
+		background #F72C32
+		background linear-gradient(to bottom, #F72C32, #F95155) 
 		color #FFF !important
-		background linear-gradient(to bottom, #F72C32, #F95155) !important
+		&:hover
+			background #F95155
+			background linear-gradient(to bottom, #F95155, #F72C32)
 	&-blue
 		background #027FFF
 		background linear-gradient(to bottom, #027FFF, #4FA7FF)
@@ -41,12 +44,12 @@
 		&:hover
 			background #FD9639
 			background linear-gradient(to bottom, #FD9639, #FC7903)
-	&-red
-		background #F72C32
-		background linear-gradient(to bottom, #F72C32, #F95155)
+	&-yellow
+		background rgba(223, 134, 0, 0.5)
+		background linear-gradient(to bottom, rgba(223, 134, 0, 0.5) 0%, rgba(252, 230, 0, 0.5) 100%)
 		&:hover
-			background #F95155
-			background linear-gradient(to bottom, #F95155, #F72C32)
+			background #F72C32, #F95155
+			background linear-gradient(to bottom, #F72C32, #F95155)
 
 .Footer
 .Services
@@ -83,12 +86,13 @@
 			display block
 			border-radius 50%
 			font-size 1.5em
-			padding 0.3em 0.4em
+			padding 0.3em 0.5em
 		
 	&-item
 		border-right 1px solid #1B1B1B
 		font-weight 500
 		margin-left 2em
+		text-align center
 		width 18%
 		p
 			color #b0b0b0
@@ -122,7 +126,8 @@
 .Header
 	background #ff9a07
 	background linear-gradient(to bottom, #DF8600 0%, #FCE22E 100%)
-	height 95vh
+	min-height 600px
+	height 90vh
 	padding 1em
 	&-bottom
 	&-slide
@@ -133,7 +138,7 @@
 		width 80 vw
 		
 	&-bottom
-		margin-top 2em
+		margin-top 1em
 		overflow hidden
 	&-bottomBrand
 		color #FFF
@@ -142,35 +147,35 @@
 	&-bottomBrandTitle 
 		font-family 'Calligraffitti', cursive			
 		position relative
-		span
-			color #222
-			font-family 'Oswald', sans-serif
-			display block
-			font-size 1rem
-			left 10%
-			position absolute
-			top 70%
+		a
+			color #FFF
+			span
+				color #222
+				font-family 'Oswald', sans-serif
+				display block
+				font-size 1rem
+				left 10%
+				position absolute
+				top 70%
+	&-bottomItem
+		display inline-block
+		list-style none
+		margin 0 0.2em
+		text-align center
 	&-bottomMenu
 		display inline-block
 		overflow hidden
 		position: absolute;
-		top: 25%;	
+		top: 35%;	
 		width 68%
-	&-bottomMenuItem
-		display inline-block
-		list-style none
-		margin 0
-	&-bottomMenuLink
-		background linear-gradient(to bottom, rgba(223, 134, 0, 0.5) 0%, rgba(252, 230, 0, 0.5) 100%)
+	&-bottomLink
 		color #222
 		display block
-		font-size 1.5em
-		padding 0.5em 1em
-		text-decoration none
 		&:hover
-			background linear-gradient(to bottom, #F72C32, #F95155)
 			color #FFF
-	&-bottomMenuList
+	&-bottomList
+		display flex
+		justify-content flex-end
 		margin 0
 	
 	&-slide
@@ -183,7 +188,7 @@
 		width 80%
 	&-slideTitle
 		font-size 2.4rem
-		font-weight 300
+		font-weight 500
 		text-transform uppercase
 	&-slideChange
 		span
@@ -214,12 +219,18 @@
 	&-topFollow
 		color #FFF
 		font-size 1.5em
-		right 1%
-		top 90%
+		top 50%
 		text-transform lowercase
 	
 .Services
-	top -5em
+	border-top 2px solid #D3D3D3
+	padding-top 3em
+	top -3em
+	&-aside
+	&-article
+	&-articleContent
+		h2
+			text-align left
 	&-aside
 		width 30%
 	&-asideItem
@@ -228,6 +239,7 @@
 	&-asideLink
 		color: #222
 		display block
+		font-size 0.85em
 	&-asideLink:before
 		color: #222
 		content "\e604"
@@ -239,7 +251,14 @@
 		width 69%
 	&-articleContent
 		display inline-block
+		font-family 'Roboto', sans-serif
+		font-size 0.9em
+		padding-left 1em
 		width 60%
+		h5
+			text-align left
+	&-articleImage
+		width 100%
 	&-articleItem
 		display flex
 		margin-bottom 2em
@@ -248,10 +267,15 @@
 		width 39%
 
 .Work
-	top -7em
+	top -5em
+	width 90vw
 	p
-		color #B0B0B0
-		font-family sans-serif
+		color #696969
+		font-family 'Roboto', sans-serif
+		font-size 0.85em
+		font-weight 0
+		line-height 1.5em
+		word-spacing 0.4em
 		text-align center
 	&-item
 		margin-right 1.5em
@@ -259,14 +283,12 @@
 			margin-right 0
 	&-itemFigure
 		background #FFF
-		border-radius 50%
+		border-radius 50% 50% 0 0
 		margin 0 auto
-		min-height 290px
-		padding 1em
 		text-align center
 	&-itemImage
-		min-height: 121px;
-		width: 130px;
+		padding 1em 1em 0 1em 
+		width: 80%
 		
 
 /*Utilities*/
@@ -291,7 +313,7 @@
 .list
 	border 1px solid #E6E6E6
 	text-align left
-	width 80%
+	width 90%
 	&-light
 		color #000
 		background #FFFFFF
@@ -304,8 +326,9 @@
 	float right
 .title	
 	display block
-	margin 0
+	margin 0 0 0.5em 0
 	padding 0
+	text-align center
 	&-1x
 	&-2x
 	&-3x
