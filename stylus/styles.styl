@@ -126,8 +126,6 @@
 .Header
 	background #ff9a07
 	background linear-gradient(to bottom, #DF8600 0%, #FCE22E 100%)
-	min-height 600px
-	height 90vh
 	padding 1em
 	&-bottom
 	&-slide
@@ -140,6 +138,7 @@
 	&-bottom
 		margin-top 1em
 		overflow hidden
+		position relative
 	&-bottomBrand
 		color #FFF
 		display inline-block
@@ -163,11 +162,12 @@
 		margin 0 0.2em
 		text-align center
 	&-bottomMenu
+	&-navigation
 		display inline-block
-		overflow hidden
-		position: absolute;
-		top: 35%;	
-		width 68%
+		position absolute
+		right 0	
+		top 35%
+		width 69%
 	&-bottomLink
 		color #222
 		display block
@@ -177,10 +177,20 @@
 		display flex
 		justify-content flex-end
 		margin 0
+	&-select
+		display none
+		position absolute
+		right 0	
+		top 35%
+		width 90%
+		option
+			color #0C0B09
+			
 	
 	&-slide
 		color #111
 		text-align center
+		margin-bottom 4em
 	&-slideTitle
 	&-slideChange
 		margin 0 auto
@@ -217,10 +227,11 @@
 			padding 0.55em 0.7em
 			width 300px
 	&-topFollow
-		color #FFF
 		font-size 1.5em
 		top 50%
 		text-transform lowercase
+		a
+			color #FFF
 	
 .Services
 	border-top 2px solid #D3D3D3
@@ -255,6 +266,9 @@
 		font-size 0.9em
 		padding-left 1em
 		width 60%
+		a
+			font-size 1em
+			font-weight 800
 		h5
 			text-align left
 	&-articleImage
@@ -379,3 +393,113 @@
 	text-align right
 .u-uppercase
 	text-transform uppercase
+	
+@media screen and (max-width: 1000px)
+	.btn
+		font-size 0.9em
+		&-active
+		&-yellow
+			padding 0.4em 0.3em
+	.Header
+		&-bottomList
+			display none
+		&-bottomBrandTitle
+			font-size 3em
+			a
+				span
+					font-size 0.25em
+				
+		&-select
+			display block
+@media screen and (max-width: 768px)
+	.Header
+	.Work
+	.Services
+		width 98%
+	
+	.Header
+		&-bottom
+			margin 0
+		&-bottomBrandTitle
+			font-size 3em
+			a
+				span
+					font-size 0.20em
+		&-slideTitle
+			font-size 1.5em
+			a
+				font-size 1.5em
+		&-top
+			display none
+	.Services
+		&-article
+			width 100%
+		&-aside
+			display none
+	.Work
+		display block
+		margin 0 auto
+		width 95%
+		&-item
+			display inline-block
+			margin 0 auto
+			padding-right 1em
+			width 48%
+@media screen and (max-width: 480px)
+	.Header
+	.Work
+	.Services
+		width 98%
+	.Footer
+		&-item
+			display none
+			&:nth-child(4)
+				display block
+				text-align left
+				margin-bottom 0.5em
+				width 100%
+				p
+					padding 0.2em
+		&-bottom
+			display block
+	.Header
+		padding 0
+		&-bottom
+			width 100%
+		&-bottomBrand
+			width 30%
+			position absolute
+			left 0
+		&-bottomBrandTitle
+			a
+				span
+					display none
+		&-navigation
+			position absolute
+			right 1%
+			top 32%
+			width 64%
+		&-slideTitle
+			font-size 1.5em
+			a
+				font-size 1.5em
+	.Services
+		&-articleContent
+			width 100%
+		&-articleFigure
+			width 100%
+		&-articleItem
+			border-bottom 1px solid #D9D5D5
+			display block
+			padding-bottom 1em
+			width 100%
+			
+	.Work
+		display block
+		margin 0 auto
+		width 95%
+		&-item
+			display inline-block
+			margin 0 auto
+			padding-right 1em
+			width 48%
