@@ -1,0 +1,505 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald|Calligraffitti|Roboto:300");
+
+@import "nib"
+@import "normalize.styl"
+@import "font.styl" 
+
+.btn
+.list
+	border none
+	border-radius 5px
+	box-shadow 0px 0px 2px rgba(255, 255, 255, 0.5)
+	color #FFF
+	padding 0.5em 0.7em
+	text-align center
+	text-transform uppercase
+	width 100px
+	&-active
+		background #F72C32
+		background linear-gradient(to bottom, #F72C32, #F95155) 
+		color #FFF !important
+		&:hover
+			background #F95155
+			background linear-gradient(to bottom, #F95155, #F72C32)
+	&-blue
+		background #027FFF
+		background linear-gradient(to bottom, #027FFF, #4FA7FF)
+		&:hover
+			background #4FA7FF
+			background linear-gradient(to bottom, #4FA7FF, #027FFF)
+	&-icon
+		margin-left -2.7em
+		text-align center
+		width 40px
+	&-light
+		color #000
+		background #E9E9E9
+		background linear-gradient(to bottom, #E9E9E9, #F0F0F0)
+		&:hover
+			background #D3D3D3
+			background linear-gradient(to bottom, #D3D3D3, #E6E6E6)
+	&-orange
+		background #FC7903
+		background linear-gradient(to bottom, #FC7903, #FD9639)
+		&:hover
+			background #FD9639
+			background linear-gradient(to bottom, #FD9639, #FC7903)
+	&-yellow
+		background rgba(223, 134, 0, 0.5)
+		background linear-gradient(to bottom, rgba(223, 134, 0, 0.5) 0%, rgba(252, 230, 0, 0.5) 100%)
+		&:hover
+			background #F72C32, #F95155
+			background linear-gradient(to bottom, #F72C32, #F95155)
+
+.Footer
+.Services
+.Work
+	display flex
+	margin 0 auto
+	position relative
+	width 80vw
+.Footer
+	align-items stretch
+	background #0C0B09
+	color #FFF
+	display flex
+	flex-wrap wrap
+	font-weight 100
+	justify-content center
+	padding 1em
+	width 100%
+	&-bottom
+		display flex
+		flex-wrap wrap
+		font-size 0.8em
+		justify-content space-between
+		position relative
+		width 80vw
+	&-bottomList
+		margin 0 auto
+	&-bottomItem
+		display inline-block
+		list-style none
+		padding 0
+		a
+			color #FFF
+			display block
+			border-radius 50%
+			font-size 1.5em
+			padding 0.3em 0.5em
+		
+	&-item
+		border-right 1px solid #1B1B1B
+		font-weight 500
+		margin-left 2em
+		text-align center
+		width 18%
+		p
+			color #b0b0b0
+			font-size 0.8em
+			list-style none
+			padding-top 1em
+			position relative
+			margin 0
+			span
+				position absolute
+				right 30%
+		&:nth-child(4)
+			border none
+	&-list
+		padding 0
+		color #FFF
+	&-listItems
+		color #6B6B6B
+		font-size 0.8em
+		list-style none
+		padding-bottom 1em
+		margin 0
+		&:before
+			content "» "
+	&-listLink
+		color #868686
+		&:hover
+			color #ADADAD
+	
+	
+.Header
+	background #ff9a07
+	background linear-gradient(to bottom, #DF8600 0%, #FCE22E 100%)
+	padding 1em
+	&-bottom
+	&-slide
+	&-top
+		min-height 3.5em
+		margin 0 auto
+		position relative
+		width 80 vw
+		
+	&-bottom
+		margin-top 1em
+		overflow hidden
+		position relative
+	&-bottomBrand
+		color #FFF
+		display inline-block
+		width 30%
+	&-bottomBrandTitle 
+		font-family 'Calligraffitti', cursive			
+		position relative
+		a
+			color #FFF
+			span
+				color #222
+				font-family 'Oswald', sans-serif
+				display block
+				font-size 1rem
+				left 10%
+				position absolute
+				top 70%
+	&-bottomItem
+		display inline-block
+		list-style none
+		margin 0 0.2em
+		text-align center
+	&-bottomMenu
+	&-navigation
+		display inline-block
+		position absolute
+		right 0	
+		top 35%
+		width 69%
+	&-bottomLink
+		color #222
+		display block
+		&:hover
+			color #FFF
+	&-bottomList
+		display flex
+		justify-content flex-end
+		margin 0
+	&-select
+		display none
+		position absolute
+		right 0	
+		top 35%
+		width 90%
+		option
+			color #0C0B09
+			
+	
+	&-slide
+		color #111
+		text-align center
+		margin-bottom 4em
+	&-slideTitle
+	&-slideChange
+		margin 0 auto
+		padding 0.5em
+		width 80%
+	&-slideTitle
+		font-size 2.4rem
+		font-weight 500
+		text-transform uppercase
+	&-slideChange
+		span
+			background #FFF
+			border-radius 50%
+			display inline-block
+			height 20px
+			width 20px
+		.slideActive
+			background #000
+	
+	&-topButton
+	&-topSearch
+	&-topFollow
+		overflow hidden
+		position absolute
+	&-topButton
+		left 0
+	&-topSearch
+		right 0
+	&-topSearchForm
+		text-align right
+		.inputText
+			border none
+			border-radius 5px
+			padding 0.55em 0.7em
+			width 300px
+	&-topFollow
+		font-size 1.5em
+		top 50%
+		text-transform lowercase
+		a
+			color #FFF
+	
+.Services
+	border-top 2px solid #D3D3D3
+	padding-top 3em
+	top -3em
+	&-aside
+	&-article
+	&-articleContent
+		h2
+			text-align left
+	&-aside
+		width 30%
+	&-asideItem
+		list-style none
+		margin 0 0 0.1em 0
+	&-asideLink
+		color: #222
+		display block
+		font-size 0.85em
+	&-asideLink:before
+		color: #222
+		content "\e604"
+		font-size 1.5em
+	&-asideList
+		margin 0
+		padding 0
+	&-article
+		width 69%
+	&-articleContent
+		display inline-block
+		font-family 'Roboto', sans-serif
+		font-size 0.9em
+		padding-left 1em
+		width 60%
+		a
+			font-size 1em
+			font-weight 800
+		h5
+			text-align left
+	&-articleImage
+		width 100%
+	&-articleItem
+		display flex
+		margin-bottom 2em
+	&-articleFigure
+		display inline-block
+		width 39%
+
+.Work
+	top -5em
+	width 90vw
+	p
+		color #696969
+		font-family 'Roboto', sans-serif
+		font-size 0.85em
+		font-weight 0
+		line-height 1.5em
+		word-spacing 0.4em
+		text-align center
+	&-item
+		margin-right 1.5em
+		&:last-child
+			margin-right 0
+	&-itemFigure
+		background #FFF
+		border-radius 50% 50% 0 0
+		margin 0 auto
+		text-align center
+	&-itemImage
+		padding 1em 1em 0 1em 
+		width: 80%
+		
+
+/*Utilities*/
+/*Utilities*/
+/*Utilities*/
+.block
+	clear both
+	display block
+.center
+	margin 0 auto
+.col-6
+	display inline-block
+	width (width-content / 2) - 0.5%
+.col-12
+	width width-content
+.fill
+	width 99%
+.inline
+	display inline-block
+.left
+	float left
+.list
+	border 1px solid #E6E6E6
+	text-align left
+	width 90%
+	&-light
+		color #000
+		background #FFFFFF
+		background linear-gradient(to bottom, #FFFFFF, #F2F2F2)
+		&:hover
+			border 1px solid #E6E6E6
+			background #F2F2F2
+			background linear-gradient(to bottom, #F2F2F2, #FFFFFF)
+.right
+	float right
+.title	
+	display block
+	margin 0 0 0.5em 0
+	padding 0
+	text-align center
+	&-1x
+	&-2x
+	&-3x
+	&-4x
+	&-5x
+	&-6x
+	&-7x
+	&-8x
+	&-9x
+		font-weight 500
+		span
+			color #A7A7A7
+			display block
+			font-size 0.8em
+	&-1x
+		font-size 0.5em
+	&-2x
+		font-size 1em
+	&-3x
+		font-size 1.5em
+	&-4x
+		font-size 2em
+	&-5x
+		font-size 2.5em
+	&-6x
+		font-size 3em
+	&-7x
+		font-size 3.5em
+	&-8x
+		font-size 4em
+	&-9x
+		font-size 4.5em
+	&-10x
+		font-size 5em
+		margin 0
+		padding 0 0.3em
+		span
+			display block
+			font-weight 700
+			font-size 0.2em
+.text-center
+	text-align right
+.text-left
+	text-align right
+.text-gray
+	color #b0b0b0
+.text-right
+	text-align right
+.u-uppercase
+	text-transform uppercase
+	
+@media screen and (max-width: 1000px)
+	.btn
+		font-size 0.9em
+		&-active
+		&-yellow
+			padding 0.4em 0.3em
+	.Header
+		&-bottomList
+			display none
+		&-bottomBrandTitle
+			font-size 3em
+			a
+				span
+					font-size 0.25em
+				
+		&-select
+			display block
+@media screen and (max-width: 768px)
+	.Header
+	.Work
+	.Services
+		width 98%
+	
+	.Header
+		&-bottom
+			margin 0
+		&-bottomBrandTitle
+			font-size 3em
+			a
+				span
+					font-size 0.20em
+		&-slideTitle
+			font-size 1.5em
+			a
+				font-size 1.5em
+		&-top
+			display none
+	.Services
+		&-article
+			width 100%
+		&-aside
+			display none
+	.Work
+		display block
+		margin 0 auto
+		width 95%
+		&-item
+			display inline-block
+			margin 0 auto
+			padding-right 1em
+			width 48%
+@media screen and (max-width: 480px)
+	.Header
+	.Work
+	.Services
+		width 98%
+	.Footer
+		&-item
+			display none
+			&:nth-child(4)
+				display block
+				text-align left
+				margin-bottom 0.5em
+				width 100%
+				p
+					padding 0.2em
+		&-bottom
+			display block
+	.Header
+		padding 0
+		&-bottom
+			width 100%
+		&-bottomBrand
+			width 30%
+			position absolute
+			left 0
+		&-bottomBrandTitle
+			a
+				span
+					display none
+		&-navigation
+			position absolute
+			right 1%
+			top 32%
+			width 64%
+		&-slideTitle
+			font-size 1.5em
+			a
+				font-size 1.5em
+	.Services
+		&-articleContent
+			width 100%
+		&-articleFigure
+			width 100%
+		&-articleItem
+			border-bottom 1px solid #D9D5D5
+			display block
+			padding-bottom 1em
+			width 100%
+			
+	.Work
+		display block
+		margin 0 auto
+		width 95%
+		&-item
+			display inline-block
+			margin 0 auto
+			padding-right 1em
+			width 48%
